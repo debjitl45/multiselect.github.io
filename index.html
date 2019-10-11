@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Select</title>
+	<link rel="stylesheet" type="text/css" href="chosen.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="chosen.jquery.js"></script>
+</head>
+<style>
+	.sel
+	{
+		width: 40%;
+	}
+</style>
+<body>
+	<select multiple class="sel">
+		<option>HTML</option>
+		<option>CSS</option>
+		<option>Javascript</option>
+		<option>PHP</option>
+		<option>NodeJS</option>
+		<option>ReactJS</option>
+		<option>AJAX</option>
+	</select>
+<script>
+	$(document).ready(function(){
+		$('.sel').chosen();
+	});
+</script>
+</body>
+</html>
